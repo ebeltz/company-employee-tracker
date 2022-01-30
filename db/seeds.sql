@@ -1,9 +1,9 @@
-INSERT INTO department (name)
+INSERT INTO department (id, name)
 VALUES
-('IT'),
-('Finance & Accounting'),
-('Sales & Marketing'),
-('Operations');
+(1, 'IT'),
+(2, 'Finance & Accounting'),
+(3, 'Sales & Marketing'),
+(4, 'Operations');
 
 INSERT INTO role (title, salary, department_id)
 VALUES
