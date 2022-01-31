@@ -672,7 +672,6 @@ function deleteEmp(){
                         // confirm deleted employee
                         console.log(`\n EMPLOYEE '${answer.employee}' DELETED...\n `);
                         
-                        // back to main menu
                         mainMenu();
                     });
                 } 
@@ -681,7 +680,6 @@ function deleteEmp(){
                     // if not confirmed, go back to main menu
                     console.log(`\n EMPLOYEE '${answer.employee}' NOT DELETED...\n `);
 
-                    // back to main menu
                     mainMenu();
                 }
                 
@@ -754,7 +752,6 @@ function deleteRole(){
                         // confirm role has been added 
                         console.log(`\n ROLE '${answer.role}' DELETED...\n `);
 
-                        //back to main menu
                         mainMenu();
                     });
                 } 
@@ -763,7 +760,6 @@ function deleteRole(){
                     // if not confirmed, do not delete
                     console.log(`\n ROLE '${answer.role}' NOT DELETED...\n `);
 
-                    //back to main menu
                     mainMenu();
                 }
                 
@@ -840,7 +836,6 @@ function deleteDept(){
                         // confirm department has been deleted
                         console.log(`\n DEPARTMENT '${answer.dept}' DELETED...\n `);
 
-                        // back to main menu
                         mainMenu();
                     });
                 } 
@@ -849,7 +844,6 @@ function deleteDept(){
                     // do not delete department if not confirmed and go back to main menu
                     console.log(`\n DEPARTMENT '${answer.dept}' NOT DELETED...\n `);
 
-                    //back to main menu
                     mainMenu();
                 }
                 
@@ -891,7 +885,6 @@ function viewDeptBudget(){
                 Budget: departmentBudget
             }
 
-            // add to array
             deptBudgetArr.push(department);
         }
         console.log("\n");
@@ -899,7 +892,6 @@ function viewDeptBudget(){
         // display departments budgets using console.table
         console.table(deptBudgetArr);
 
-        // back to main menu
         mainMenu();
     });
 }
