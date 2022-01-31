@@ -113,10 +113,8 @@ function viewAllEmp(){
         if(err) return err;
         console.log("\n");
 
-        // Display query results using console.table
         console.table(res);
 
-        //Back to main menu
         mainMenu();
     });
 }
@@ -135,7 +133,6 @@ function viewAllEmpByDept(){
         return conn.query('SELECT name FROM department');
     }).then(function(value){
 
-        // Place all names within deptArr
         deptQuery = value;
         for (i=0; i < value.length; i++){
             deptArr.push(value[i].name);
